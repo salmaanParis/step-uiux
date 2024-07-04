@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staircase Progress Bar</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="progress-bar">
+  <div class="step step-1" data-message="Step 1: Begin the journey">
+    <span>7</span>
+  </div>
+  <div class="step step-2" data-message="Step 2: Keep going">
+    <span>6</span>
+  </div>
+  <div class="step step-3" data-message="Step 3: Halfway there">
+    <span>5</span>
+  </div>
+  <div class="step step-4" data-message="Step 4: Almost done">
+    <span>4</span>
+  </div>
+  <div class="step step-5" data-message="Step 5: Keep pushing">
+    <span>3</span>
+  </div>
+  <div class="step step-6" data-message="Step 6: Almost at the end">
+    <span>2</span>
+  </div>
+  <div class="step step-7" data-message="Step 7: Congratulations!">
+    <span>1</span>
+  </div>
+</div>
+
+<div class="progress-popup" id="progress-popup">
+  <div class="progress-content">
+    <span class="close-btn" onclick="closePopup()">X</span>
+    <p id="progress-message"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
